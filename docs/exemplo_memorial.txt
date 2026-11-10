@@ -1,0 +1,55 @@
+================================================================================
+       LOFRANO TECNOLOGIA - ENGENHARIA ESTRUTURAL E DE SOFTWARE
+         MEMORIAL DE CÁLCULO NORMATIVO - PILARES DE CONCRETO ARMADO
+================================================================================
+Projeto / Identificação: Pilar P12 - Edifício Residencial Solar dos Ipês
+Norma Regulamentadora:   ABNT NBR 6118:2023
+Status Geral:            APROVADO
+--------------------------------------------------------------------------------
+1. CARACTERÍSTICAS GEOMÉTRICAS E MATERIAIS
+  - Seção transversal (b x h): 20,0 x 40,0 cm
+  - Área da seção bruta (Ac):  800,0 cm²
+  - Altura livre do pilar (l): 300,0 cm (alpha = 1,00)
+  - Comprimento efetivo (le):  300,0 cm
+  - Raio de giração (i):       11,55 cm
+  - Concreto estrutural:       C25 (fck = 25 MPa)
+  - Aço estrutural:            CA_50
+  - Agressividade Ambiental:   CAA_II (Cobrimento cnom = 3,0 cm)
+  - Coeficiente gamma_n:       1,00
+
+2. ANÁLISE DE ESBELTEZ E EFEITOS DE 2ª ORDEM LOCAIS
+  - Índice de esbeltez (lambda): 26,0 (Limite máximo: 200)
+  - Esbeltez limite (lambda_1):  35,0
+  - Dispensa efeitos 2ª ordem:   SIM
+  - Força normal serviço (Nk):   650,0 kN
+  - Força normal cálculo (Nsd):  910,0 kN
+  - Excentricidade 1ª ordem e1:  3,08 cm
+  - Excentricidade acidental ea: 1,50 cm
+  - Excentricidade 2ª ordem e2:  0,00 cm
+  - Excentricidade total (etot): 4,27 cm
+  - Momento fletor total (Msd):  38,85 kN·m
+
+3. DIMENSIONAMENTO À FLEXO-COMPRESSÃO NORMAL NO ELU
+  - Força adimensional (nu):     0,637
+  - Momento adimensional (mu):   0,068
+  - Taxa mecânica (omega):       0,000
+  - Armadura calculada (As,cal): 0,00 cm²
+  - Armadura mínima (As,min):    3,20 cm²
+  - Armadura máxima (As,max):    64,00 cm²
+  - Armadura adotada (As,nec):   3,20 cm²
+  - Taxa geométrica (rho_s):     0,40%
+
+4. DETALHAMENTO DAS ARMADURAS NORMATIVAS
+  - Armadura longitudinal:       4 Φ 12,5 mm (As,ef = 4,91 cm²)
+  - Espaçamento livre entre barras: 30,5 cm (Mínimo: 2,0 cm)
+  - Estribos transversais:       Φ 5,0 mm c/ 15,0 cm
+  - Altura útil (d):             35,9 cm
+
+5. SÍNTESE DE CONFORMIDADES NORMATIVAS
+  - [dimensoes_minimas]:                             CONFORME
+  - [esbeltez_admissivel]:                             CONFORME
+  - [taxa_armadura_maxima]:                             CONFORME
+  - [espacamento_livre_barras]:                             CONFORME
+================================================================================
+LOFRANO TECNOLOGIA - Soluções Determinísticas e Engenharia Confiável.
+================================================================================

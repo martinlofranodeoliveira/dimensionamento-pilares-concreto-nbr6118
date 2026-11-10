@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimensionamento-pilares-concreto-nbr6118"
+version = "1.0.0"
+description = "Dimensionamento analítico, verificação estrutural e detalhamento normativo de pilares de concreto armado segundo ABNT NBR 6118:2023. LOFRANO TECNOLOGIA."
+readme = "README.md"
+authors = [
+  { name = "Martin Lofrano de Oliveira", email = "martin@lofranotecnologia.com.br" },
+]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering",
+]
+keywords = [
+  "engenharia-estrutural",
+  "concreto-armado",
+  "nbr6118",
+  "pilares",
+  "flexo-compressao",
+  "segunda-ordem",
+  "detalhamento",
+  "abnt",
+  "zero-float",
+  "lofrano-tecnologia",
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+pilares-concreto = "pilares_concreto_nbr6118.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]

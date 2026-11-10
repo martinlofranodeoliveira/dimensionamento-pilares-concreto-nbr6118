@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Testes (${{ matrix.os }} / Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONIOENCODING: utf-8
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: ["3.11", "3.12", "3.13", "3.14"]
+        include:
+          - os: windows-latest
+            python-version: "3.14"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Executar suíte de testes unitários
+        shell: bash
+        run: |
+          PYTHONPATH=src python -m unittest discover -s tests -v
+
+      - name: Executar auditor independente SQLite
+        shell: bash
+        run: |
+          python tools/verify_independent.py
+
+  packaging:
+    name: Empacotamento e Verificação Isolada de Rede
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Instalar ferramentas de build
+        run: |
+          python -m pip install --upgrade pip build wheel
+
+      - name: Construir distribuições (sdist e wheel)
+        run: |
+          python -m build
+
+      - name: Testar instalação e isolamento total de rede
+        run: |
+          python -m venv venv_teste
+          source venv_teste/bin/activate
+          pip install dist/*.whl
+          if command -v unshare >/dev/null 2>&1 && unshare -r -n true 2>/dev/null; then
+            unshare -r -n pilares-concreto --help
+            unshare -r -n pilares-concreto tabelas
+            unshare -r -n pilares-concreto materiais
+            unshare -r -n pilares-concreto versao
+            unshare -r -n pilares-concreto dimensionar -a examples/pilar_intermediario_esbeltez_moderada.json
+          else
+            pilares-concreto --help
+            pilares-concreto tabelas
+            pilares-concreto materiais
+            pilares-concreto versao
+            pilares-concreto dimensionar -a examples/pilar_intermediario_esbeltez_moderada.json
+          fi
+          deactivate

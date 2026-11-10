@@ -1,0 +1,52 @@
+{
+  "identificacao": "Pilar P04 - Pilar-Fita de Canto Edifício Metrópole",
+  "geometria": {
+    "largura_b_cm": {
+      "num": 16,
+      "den": 1
+    },
+    "comprimento_h_cm": {
+      "num": 60,
+      "den": 1
+    },
+    "altura_livre_l_cm": {
+      "num": 320,
+      "den": 1
+    },
+    "coeficiente_flambagem_alpha": {
+      "num": 1,
+      "den": 1
+    }
+  },
+  "esforcos": {
+    "forca_normal_nk_kn": {
+      "num": 1100,
+      "den": 1
+    },
+    "momento_topo_mk_topo_knm": {
+      "num": 35,
+      "den": 1
+    },
+    "momento_base_mk_base_knm": {
+      "num": 20,
+      "den": 1
+    },
+    "eixo_flexao": "h"
+  },
+  "materiais": {
+    "classe_concreto_fck": 30,
+    "tipo_aco": "CA_50",
+    "classe_agressividade": "CAA_II"
+  },
+  "detalhamento": {
+    "bitola_longitudinal_sugerida_mm": {
+      "num": 16,
+      "den": 1
+    },
+    "bitola_estribo_sugerida_mm": {
+      "num": 63,
+      "den": 10
+    },
+    "distribuicao_armadura": "SIMETRICA_DUAS_FACES"
+  }
+}

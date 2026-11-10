@@ -1,0 +1,135 @@
+{
+  "atende_geral": true,
+  "avisos": [],
+  "conformidades": {
+    "dimensoes_minimas": true,
+    "esbeltez_admissivel": true,
+    "espacamento_livre_barras": true,
+    "taxa_armadura_maxima": true
+  },
+  "detalhamento": {
+    "altura_util_d_cm": {
+      "den": 8,
+      "num": 287
+    },
+    "area_aco_efetiva_cm2": {
+      "den": 250,
+      "num": 1227
+    },
+    "bitola_estribo_mm": {
+      "den": 1,
+      "num": 5
+    },
+    "bitola_longitudinal_mm": {
+      "den": 2,
+      "num": 25
+    },
+    "cobrimento_adotado_cm": {
+      "den": 1,
+      "num": 3
+    },
+    "espacamento_estribos_cm": {
+      "den": 1,
+      "num": 15
+    },
+    "espacamento_livre_barras_cm": {
+      "den": 2,
+      "num": 61
+    },
+    "quantidade_barras": 4
+  },
+  "esbeltez": {
+    "atende_dimensoes_minimas": true,
+    "coeficiente_majoracao_gamman": {
+      "den": 1,
+      "num": 1
+    },
+    "comprimento_efetivo_le_cm": {
+      "den": 1,
+      "num": 300
+    },
+    "dispensa_segunda_ordem": true,
+    "e_esbeltez_admissivel": true,
+    "esbeltez_limite_lambda1": {
+      "den": 1,
+      "num": 35
+    },
+    "indice_esbeltez_lambda": {
+      "den": 1000000000000,
+      "num": 25980762113533
+    },
+    "raio_giracao_i_cm": {
+      "den": 3000000000000,
+      "num": 34641016151377
+    }
+  },
+  "excentricidades": {
+    "curvatura_aproximada_1_r": {
+      "den": 1,
+      "num": 0
+    },
+    "excentricidade_acidental_ea_cm": {
+      "den": 2,
+      "num": 3
+    },
+    "excentricidade_primeira_ordem_e1_cm": {
+      "den": 13,
+      "num": 40
+    },
+    "excentricidade_segunda_ordem_e2_cm": {
+      "den": 1,
+      "num": 0
+    },
+    "excentricidade_total_etot_cm": {
+      "den": 26,
+      "num": 111
+    },
+    "forca_normal_calculo_nsd_kn": {
+      "den": 1,
+      "num": 910
+    },
+    "momento_calculo_total_msd_knm": {
+      "den": 20,
+      "num": 777
+    }
+  },
+  "flexo_compressao": {
+    "area_aco_adotada_cm2": {
+      "den": 5,
+      "num": 16
+    },
+    "area_aco_calculada_cm2": {
+      "den": 1,
+      "num": 0
+    },
+    "area_aco_maxima_cm2": {
+      "den": 1,
+      "num": 64
+    },
+    "area_aco_minima_cm2": {
+      "den": 5,
+      "num": 16
+    },
+    "area_concreto_ac_cm2": {
+      "den": 1,
+      "num": 800
+    },
+    "forca_adimensional_nu": {
+      "den": 1000,
+      "num": 637
+    },
+    "momento_adimensional_mu": {
+      "den": 80000,
+      "num": 5439
+    },
+    "taxa_armadura_geometrica_pct": {
+      "den": 5,
+      "num": 2
+    },
+    "taxa_mecanica_omega": {
+      "den": 1,
+      "num": 0
+    }
+  },
+  "identificacao": "Pilar P12 - Edifício Residencial Solar dos Ipês"
+}

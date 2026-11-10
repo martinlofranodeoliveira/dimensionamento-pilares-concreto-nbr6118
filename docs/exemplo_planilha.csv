@@ -1,0 +1,25 @@
+PARAMETRO,VALOR,UNIDADE
+Identificacao,Pilar P12 - Edifício Residencial Solar dos Ipês,
+Norma,ABNT NBR 6118:2023,
+Status Geral,APROVADO,
+Largura b,"20,0",cm
+Comprimento h,"40,0",cm
+Area Concreto Ac,"800,0",cm2
+Altura Livre l,"300,0",cm
+Comprimento Efetivo le,"300,0",cm
+Indice Esbeltez lambda,"26,0",
+Esbeltez Limite lambda1,"35,0",
+Coeficiente gamma_n,"1,00",
+Carga Nk,"650,0",kN
+Carga Nsd,"910,0",kN
+Excentricidade e1,"3,08",cm
+Excentricidade ea,"1,50",cm
+Excentricidade e2,"0,00",cm
+Excentricidade etot,"4,27",cm
+Momento Total Msd,"38,85",kNm
+Area Aco Calculada,"0,00",cm2
+Area Aco Minima,"3,20",cm2
+Area Aco Adotada,"3,20",cm2
+Barras Longitudinais,"4 x 12,5mm",
+Area Aco Efetiva,"4,91",cm2
+Estribos,"5,0mm c/ 15,0cm",
